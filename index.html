@@ -11,26 +11,6 @@
       <!--Let browser know website is optimized for mobile-->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBu6cxCx4TehaGlN2i6CQiY3s1RtCFD62g",
-    authDomain: "quebra-galho-7960e.firebaseapp.com",
-    databaseURL: "https://quebra-galho-7960e.firebaseio.com",
-    projectId: "quebra-galho-7960e",
-    storageBucket: "quebra-galho-7960e.appspot.com",
-    messagingSenderId: "468350215509",
-    appId: "1:468350215509:web:118ff3a5b74d0e12f0bbdc"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
    </head>
 
     <body>
@@ -80,7 +60,34 @@
       </div>
     </div>
   </div> <!-- esse é o fim do row -->
+     <div class="center">
+      <a class="btn-floating btn-small btn-large add-btn sindenav-trigger" data-target="side-form">
+       <i class="material-incons">add</i
+        </a>
+        </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
 
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBu6cxCx4TehaGlN2i6CQiY3s1RtCFD62g",
+    authDomain: "quebra-galho-7960e.firebaseapp.com",
+    databaseURL: "https://quebra-galho-7960e.firebaseio.com",
+    projectId: "quebra-galho-7960e",
+    storageBucket: "quebra-galho-7960e.appspot.com",
+    messagingSenderId: "468350215509",
+    appId: "1:468350215509:web:118ff3a5b74d0e12f0bbdc"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
  
    
       <!--JavaScript at end of body for optimized loading-->
