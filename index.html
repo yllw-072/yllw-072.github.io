@@ -1,101 +1,108 @@
- <!DOCTYPE html>
-  <html>
-    <head>
-       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="manifest" href="/manifest.json">
+<!DOCTYPE html>
+<html>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <meta charset="utf-8">
+    <!--Otimizado para mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="red">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="red">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style type="text/css">
+    img {
+        filter: brightness(0.85);
+    }
+    #uploader {
+        -webkit-appearence: none;
+        appearance: none;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
 
-    <body>
- <nav class="black">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Quebra galho<i class="material-icons">apps</i></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="pages/sobre.html">Sobre nós</a></li>
-        <li><a href="pages/contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="pages/sobre.html">Sass</a></li>
-    <li><a href="pages/contato.html">Components</a></li>
-  </ul>
-
- <div class="row">
-    <div class="col s6 m7">
-      <div class="card teal darken-4">
-        <div class="card-image">
-          <img src="img/391923007922130.jpg">
-          <span class="card-title">Card Title</span>
+<body style="background-color: #D32E5EFF;">
+    <nav style="background-color: #AE0E36FF;">
+        <div class="nav-wrapper">
+            <a href="./index.html" class="brand-logo">Quebra galho</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="pages/sobre.html">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="pages/contato.html">Contato</a>
+                </li>
+            </ul>
         </div>
-        <div class="card-content">
-          <p>Sou uma diarista top beijos de luz.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-    <div class="col s6 m7">
-      <div class="card teal darken-4">
-        <div class="card-image">
-          <img src="img/391923007922130.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>Chama lá por que comigo tudo fica limpo.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div> <!-- esse é o fim do row -->
-     <div class="center">
-      <a class="btn-floating btn-small btn-large add-btn sindenav-trigger" data-target="side-form">
-       <i class="material-icons">add</i>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="pages/sobre.html">Sobre Nós</a>
+        </li>
+        <li>
+            <a href="pages/contato.html">Contato</a>
+        </li>
+    </ul>
+    <div class="container-fluid">
+        <!-- inicio container -->
+        <div class="row diaristas">
+            <!-- inicio row-->
+        </div><!-- fim do row -->
+    </div><!-- fim do container-->
+    <div class="center">
+        <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
         </a>
-        </div>
-       <div id="side-form" class="sidenav side-form">
-    <form class="adiciona-quebragalho container section">
-      <h6 >Nova Quebragalho</h6>
-      <div class="divider"></div>
-      <div class="input-field">
-        <input placeholder="ex. Diaristas" id="quebragalhoTitulo" type="text" class="validate">
-        <label for="quebragalhoTitulo">Título do Quebragalho</label>
-      </div>
-      <div class="input-field">
-        <input placeholder="Massa de chocolate meio-amargo e doce de leite argentino" id="sobremesaDescricao" type="text" class="validate">
-        <label for="sobremesaDescricao">Descrição da Sobremesa</label>
-      </div>
-      <div class="input-field">
-        <input placeholder="Coloque aqui um link que fale da sobremesa" id="sobremesaLink" type="text" class="validate">
-        <label for="sobremesaLink">Link da Sobremesa</label>
-      </div>
-      <div class="input-field center">
-        <button class="btn-small">Adicionar</button>
-      </div>
-    </form>
-  </div>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
-
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
+    </div>
+    <div id="side-form" class="sidenav side-form">
+        <!-- formulario para adicionar diaristas-->
+        <form class="adiciona-diarista container section">
+            <h6>Nova Diarista</h6>
+            <div class="divider"></div>
+            <div class="input-field">
+                <input placeholder="ex. Maria willy" id="diaristaNome" type="text" class="validate">
+                <label for="diaristaNome">Nome da Diarista</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Media 17 anos uma otima profissional" id="diaristaDescricao" type="text" class="validate">
+                <label for="diaristaDescricao">Descrição da Diarista</label>
+            </div>
+            <div class="input-field">
+                <progress value="0" max="100" id="uploader">0%</progress>
+                <input type="file" id="fileButton" name="diaristaArquivo" />
+                <br>
+            </div>
+            <div class="input-field">
+                <input placeholder="Coloque aqui um link que fale da diarista" id="diaristaLink" type="text" class="validate">
+                <label for="diaristaLink">Link da Diarista</label>
+            </div>
+            <div class="input-field center">
+                <button class="btn-small">Adicionar</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-storage.js"></script>
+    <script>
+    // Configuracao do Firebase para o seu aplicativo
+    // Esta parte é diferente para cada aplicativo. NÃO COPIAR!
+   <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBu6cxCx4TehaGlN2i6CQiY3s1RtCFD62g",
@@ -108,13 +115,58 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-</script>
- 
-   
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="./js/app.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/ui.js"></script>
-    </body>
-  </html>
+     
+     // Inicializar Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    // Obter elementos para o upload
+    var uploader = document.getElementById('uploader');
+    var fileButton = document.getElementById('fileButton');
+    // Evento que monitora os eventos do botao de upload
+    fileButton.addEventListener('change', function(e) {
+        // obter arquivo
+        var file = e.target.files[0];
+        file.name = document.getElementById("fileButton").value = this.value.substring(12);
+        console.log(file.name);
+        // Create the file metadata
+        var metadata = {
+            contentType: 'image/jpeg'
+        };
+        var storageRef = firebase.storage().ref();
+        var uploadTask = storageRef.child('images/' + file.name).put(file, metadata);
+        uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
+            function(snapshot) {
+                var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                console.log('Upload is ' + progress + '% done');
+                switch (snapshot.state) {
+                    case firebase.storage.TaskState.PAUSED: // or 'paused'
+                        console.log('Upload is paused');
+                        break;
+                    case firebase.storage.TaskState.RUNNING: // or 'running'
+                        console.log('Upload is running');
+                        break;
+                }
+            },
+            function(error) {
+                switch (error.code) {
+                    case 'storage/unauthorized':
+                        break;
+                    case 'storage/canceled':
+                        break;
+                    case 'storage/unknown':
+                        break;
+                }
+            },
+            function() {
+                uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                    console.log('File available at', downloadURL);
+                });
+            });
+    });
+    </script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/db.js"></script>
+    <script type="text/javascript" src="./js/ui.js"></script>
+</body>
+
+</html>
