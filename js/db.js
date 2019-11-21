@@ -22,25 +22,25 @@ db.collection('diaristas').onSnapshot(snapshot => {
     });
 });
 
-// adicionar nova sobremesa
+// adicionar novo quebragalho
 const form = document.querySelector('form');
 form.addEventListener('submit', evt => {
     evt.preventDefault();
 
-    const diaristas = {
-        nome: form.diaristasTitulo.value,
-        descricao: form.diaristasDescricao.value,
-        link: form.diaristasLink.value,
-        endereco_imagem: form.diaristasArquivo.value
+    const quebragalho = {
+        nome: form.quebragalhoTitulo.value,
+        descricao: form.quebragalhoDescricao.value,
+        link: form.quebragalhoLink.value,
+        endereco_imagem: form.quebragalhoArquivo.value
     };
 
-    db.collection('diaristas').add(diaristas)
+    db.collection('quebragalho').add(quebragalho)
         .catch(err => console.log(err));
 
     //reseta o formulario
-    form.diaristasTitulo.value = '';
-    form.diaristasDescricao.value = '';
-    form.diaristasLink.value = '';
-    form.diaristasArquivo.value = '';
+    form.quebragalhoTitulo.value = '';
+    form.quebragalhoDescricao.value = '';
+    form.quebragalhoLink.value = '';
+    form.quebragalhoArquivo.value = '';
 
 });
