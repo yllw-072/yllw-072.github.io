@@ -28,19 +28,18 @@ form.addEventListener('submit', evt => {
     evt.preventDefault();
 
     const quebragalho = {
-        nome: form.quebragalhoTitulo.value,
-        descricao: form.quebragalhoDescricao.value,
-        link: form.quebragalhoLink.value,
-        endereco_imagem: form.quebragalhoArquivo.value
+        nome: form.diaristaNome.value,
+        descricao: form.diaristaDescricao.value,
+        link: form.diaristaLink.value,
+        
     };
 
     db.collection('quebragalho').add(quebragalho)
         .catch(err => console.log(err));
 
     //reseta o formulario
-    form.quebragalhoTitulo.value = '';
-    form.quebragalhoDescricao.value = '';
-    form.quebragalhoLink.value = '';
-    form.quebragalhoArquivo.value = '';
-
+    form.diaristaTitulo.value = '';
+    form.diaristaDescricao.value = '';
+    form.diaristaLink.value = '';
+   
 });
